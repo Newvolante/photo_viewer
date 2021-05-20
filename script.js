@@ -20,4 +20,5 @@ $(function() {
         $('#photo-container').append($imgElement).hide().fadeIn();
         
     });
+    $('.link').eq(0).trigger('click');  // simulates a click on the first thumbnail
 });
