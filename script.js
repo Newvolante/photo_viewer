@@ -4,6 +4,7 @@ $(function() {
     $('#links').on('click', 'a', function(e) {
         
         if ($('#image')) {
+            $('#image').fadeOut();
             $('#image').remove();
         }
         
@@ -16,7 +17,7 @@ $(function() {
         console.log('href link :' + $href);
         $imgElement = '<img id="image" src="./images/' + $href + '.png"/>';
 
-        $('#photo-container').append($imgElement);
+        $('#photo-container').append($imgElement).hide().fadeIn();
         
     });
 });
